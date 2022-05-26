@@ -6,6 +6,7 @@ Members:
 2. Fifa
 3. Heartties
 4. Hiyou
+
 Languages: HTML, CSS, JavaScript, React, Handlebars
 
 Goal:
