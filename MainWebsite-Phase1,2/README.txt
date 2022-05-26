@@ -1,1 +1,0 @@
-﻿How to run our websiteInstall require package by typing as following1. npm install path2. npm install express3. npm install body-parser4. npm install dotenv5. npm install mysql26. npm install express-session7. npm install hbsThen type npm start
