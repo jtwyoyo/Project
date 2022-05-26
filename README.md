@@ -19,9 +19,9 @@ Goal:
 5. Design Admin Page for handling content of the site.
 
 To run the whole program
-1.) run the database provided in folder "MainWebsite-phase1,2"
-2.) cd to "MainWebsite-phase1,2" and use command npm start
-3.) cd to "AdminDashboard-phase3" and use command npm start
+1. run the database provided in folder "MainWebsite-phase1,2"
+2. cd to "MainWebsite-phase1,2" and use command npm start
+3. cd to "AdminDashboard-phase3" and use command npm start
 
 ***Please note that: The Admin Dashboard login page doesn't work as intended, so we modified it so that
 it can login to website without any username or password needed. The userslist and movieslist page
