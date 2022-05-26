@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link link rel="stylesheet" type="text/css" href="style_login.css">
+        <title> Login Page </title>
+    </head>
+        <div class="navbar"> <!-- Navigation Bar -->
+            <div class="navbar-container">
+                <div class="logo"><h1 class="partone">NUNG</h1><h1 class="parttwo">NADOO</h1></div>
+                <div class="menu-container">
+                    <form action="/homepage" method="get"><button type="submit" class="menu-list">HOMEPAGE</button></form>
+                    <button type="button" class="menu-list">NEWS</button>
+                    <button type="button" class="menu-list">REVIEW</button>
+                    <form action="/aboutus" method="get"><button type="submit" class="menu-list">MEMBERS</button></form>
+                    <form action="/search" method="get"><button type="submit" class="menu-list">SEARCH</button></form>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-pic" src="proj_images/user-prof.png"></img>
+                    <button type="button" class="menu-list" onclick="window.location.href='/'">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    <body>
+        <div class="login">
+			<form action="/auth" method="post">
+                <div class = "login-box"> <!-- Login box section -->
+                    <h1 style = "margin-bottom: 20px;"> Login </h1>
+                    <div class = "textbox" >
+                        <i class="fas fa-user" aria-hidden="true"> </i>
+                        <input type="text" placeholder="Username" id="username" name="username" required> <!-- Username box -->
+                    </div>
+                    <div class = "textbox" >
+                        <input type="password" placeholder="Password" id="password" name="password" required> <!-- Password box -->
+                    </div>
+                    <input class="btn" type = "submit" name="signin" value="Login">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

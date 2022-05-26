@@ -1,0 +1,42 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Results</title>
+  <link rel="stylesheet" href="style_aboutus2.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css"
+    integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="result.css" />
+
+</head>
+
+<body>
+  <div class="navbar"> <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <div class="logo"><h1 class="partone">NUNG</h1><h1 class="parttwo">NADOO</h1></div>
+        <div class="menu-container">
+            <form action="/homepage" method="get"><button type="submit" class="menu-list">HOMEPAGE</button></form>
+            <button type="button" class="menu-list">NEWS</button>
+            <button type="button" class="menu-list">REVIEW</button>
+            <form action="/aboutus" method="get"><button type="submit" class="menu-list">MEMBERS</button></form>
+            <form action="/search" method="get"><button type="submit" class="menu-list">SEARCH</button></form>
+        </div>
+        <div class="profile-container">
+            <img class="profile-pic" src="proj_images\user-prof.png"></img>
+            <button type="button" class="menu-list" onclick="window.location.href='/'">LOGIN</button>
+        </div>
+    </div>
+  </div>
+  
+  <h1 class="heading">Search results</h1> 
+
+  <div> <!-- Movie Poster Images -->
+      {{#each result}}
+        <h1 class="heading" style="color: #fff;">{{this.movie_title}}</h1>
+        <img class="images" src="{{this.movie_pic}}"></img>
+      {{/each}}
+  </div>
+  
+  </body>
+</html>

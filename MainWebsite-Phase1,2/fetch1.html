@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link link rel="stylesheet" type="text/css" href="fetch.css">
+        <title>Die Hard</title>
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="content-container">
+            <h1 id="title" style="color: #fff;"></h1>
+            <div id="poster"></div>
+            <div id="desc" style="color: #fff;"></div>
+            <div id="year"></div>
+        </div>
+    </div>
+    </body>
+    <script>
+        Title = document.querySelector("#title");
+        Poster = document.querySelector("#poster");
+        Desc = document.querySelector("#desc");
+        Year = document.querySelector("#year");
+        const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+            'X-RapidAPI-Key': 'ace4465481msh829161a72e401eap1d97d0jsn7882921b7562'
+            }
+        };
+
+        fetch('https://movie-database-alternative.p.rapidapi.com/?r=json&i=tt0095016', options)
+        .then(response => response.json())
+        .then(response => {
+        
+        console.log(response)        
+        Poster.innerHTML = `<img src="${response.Poster}" class = "poster" alt="poster">`
+
+        Title.innerHTML = `${response.Title}`;
+
+        Desc.innerHTML = `${response.Plot}`;
+
+        Year.innerHTML = `Release Date: ${response.Released}`;
+        })
+            .catch(err => {
+                console.error(err);
+            }
+        );
+    </script>
+</html>

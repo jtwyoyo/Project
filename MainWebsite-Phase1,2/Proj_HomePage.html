@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Proj_HomePage_Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Proj_HomePage_anim.js"></script>
+</head>
+
+<body>
+    <div class="navbar">  <!-- Navigation Bar -->
+        <div class="navbar-container">
+            <div class="logo"><h1 class="partone">NUNG</h1><h1 class="parttwo">NADOO</h1></div>
+            <div class="menu-container">
+                <form action="/homepage" method="get"><button type="submit" class="menu-list">HOMEPAGE</button></form>
+                <button type="button" class="menu-list">NEWS</button>
+                <button type="button" class="menu-list">REVIEW</button>
+                <form action="/aboutus" method="get"><button type="submit" class="menu-list">MEMBERS</button></form>
+                <form action="/search" method="get"><button type="submit" class="menu-list">SEARCH</button></form>
+            </div>
+            <div class="profile-container">
+                <img class="profile-pic" src="proj_images\user-prof.png"></img>
+                <button type="button" class="menu-list" onclick="window.location.href='/'">LOGIN</button>
+            </div>
+        </div>
+    </div>
+    <div class="featured-header"><h2>FEATURED</h2></div> <!-- Featured Part -->
+    <div class="featured-container">
+        <img class="featured-poster" src="proj_images\bg_ex2.jpg"></img>
+        <div class="featured-title">
+            <p><h1>"Spider-Man: No Way Home" Leaps To $1.53B WW For No. 8 On All-Time Global Chart – International Box Office</h1></p>
+        </div>
+    </div>
+    <div class="news-header"><h2>NEWS</h2></div> <!-- News Part -->
+    <div class="news-container">
+        <div class="news-content">
+            <img class="news-pic" src="proj_images\bg_ex.jpg"></img>
+            <div class="news-desc">
+                <p>Robert Pattinson Got Warned About ‘Illegal Things’ After Kristen Stewart ‘Twilight’ Kiss
+                </p>
+            </div>
+        </div>
+        <div class="news-content">
+            <img class="news-pic" src="proj_images\johnny.jpg"></img>
+            <div class="news-desc">
+                <p>The Movie That Earned Johnny Depp A $55 Million Paycheck
+                </p>
+            </div>
+        </div>
+        <div class="news-content">
+            <img class="news-pic" src="proj_images\sean.jpg"></img>
+            <div class="news-desc">
+                <p>Netflix’s Big Movie Year, ‘Jackass Forever,’ and the Five Greatest ‘Jackass’ Stunts of All Time
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="review-header"><h2>REVIEW</h2></div> <!-- Review Part -->
+    <div class="review-container">
+        <div class="review-content">
+            <img class="review-poster" src="proj_images\bg_ex3.jpg"></img>
+            <div class="review-title"><h3>The Last Witch Hunter</h3></div>
+        </div>
+        <div class="review-content">
+            <img class="review-poster" src="proj_images\after.jpg"></img>
+            <div class="review-title"><h3>After</h3></div>
+        </div>
+        <div class="review-content">
+            <img class="review-poster" src="proj_images\diehard.jpg"></img>
+            <div class="review-title"><h3>Die Hard</h3></div>
+        </div>
+        <div class="review-content">
+            <img class="review-poster" src="proj_images\us.jpg"></img>
+            <div class="review-title"><h3>Us</h3></div>
+        </div>
+        <div class="review-content">
+            <img class="review-poster" src="proj_images\theinformers.jpg"></img>
+            <div class="review-title"><h3>The Informers</h3></div>
+        </div>
+        <img class="arrow" src="proj_images\arrow.png"></img>
+    </div>
+</body>
+
+</html>

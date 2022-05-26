@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap');
+
+.home{
+    flex: 6;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.home .title{
+    font-family: 'Akshar', sans-serif;
+    font-size: 300%;
+}

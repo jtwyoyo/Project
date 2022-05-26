@@ -1,0 +1,44 @@
+@import "fonts.googleapis.com/css?family=Pacifico";
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("proj_images/star4.gif");
+}
+
+.content-container{
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 500px;
+    height: 700px;
+}
+
+.poster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 500px;
+    height: 700px;
+}
+
+#title {
+    text-align: center;
+}
+
+#desc {
+    text-indent: 30px;
+    margin-top: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#year {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
