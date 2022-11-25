@@ -1,2 +1,2 @@
 # Project
-An overview of every project , lab and lectures
+An overview of every essential projects and labs.
